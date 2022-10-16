@@ -1,0 +1,5 @@
+app_name                    = "sudoker"
+primary_region              = "us-east-1"
+secondary_region            = "us-west-1"
+dynamodb_table_billing_mode = "PAY_PER_REQUEST"
+env = "dev"
