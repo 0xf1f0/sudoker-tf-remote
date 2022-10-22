@@ -3,6 +3,11 @@ variable "app_name" {
   description = "Name of the application"
 }
 
+variable "bucket_list" {
+  type = set(string)
+  description = "The set of buckets to create"
+}
+
 variable "primary_region" {
   type        = string
   description = "Primary AWS region"
@@ -11,12 +16,6 @@ variable "primary_region" {
 variable "secondary_region" {
   type        = string
   description = "Secondary AWS region"
-}
-
-variable "dynamodb_table_billing_mode" {
-  type        = string
-  description = "Dynamodb table billing mode"
-  default     = "PAY_PER_REQUEST"
 }
 
 variable "env" {
